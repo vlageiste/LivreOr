@@ -1,0 +1,18 @@
+<% include ../page/header %>
+
+<div class="ui comments">
+        <div class="comment">
+            <a class="avatar" href="/message/<%= message.id%>">
+                <img src="https://images.alphacoders.com/647/647180.jpg" >
+            </a>
+            <div class="metadata">
+                <div class="date">
+                <%= message.created_at.fromNow() %>
+                </div>
+            </div>
+            <div class="content">
+                <div class="test"><%= message.content %></div>
+            </div>
+        </div>
+</div>
+<% include ../page/footer %>
